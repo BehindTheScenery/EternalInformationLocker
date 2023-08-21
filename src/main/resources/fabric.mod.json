@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "eternal_information_locker",
+  "version": "${version}",
+  "name": "Eternal Information Locker",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/BehindTheScenery/EternalInformationLocker"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ru.quantum_emperor.eternal_information_locker.client.EternalInformationLockerClient"
+    ],
+    "main": [
+      "ru.quantum_emperor.eternal_information_locker.EternalInformationLocker"
+    ]
+  },
+  "mixins": [
+    "eternal_information_locker.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

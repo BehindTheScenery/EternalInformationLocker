@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "WDW",
+    "III"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:dirt"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "eternal_information_locker:quantum_identifier",
+    "count": 1
+  }
+}

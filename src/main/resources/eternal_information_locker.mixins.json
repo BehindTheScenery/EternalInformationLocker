@@ -4,8 +4,13 @@
   "package": "ru.quantum_emperor.eternal_information_locker.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "client.WaypointRenderMixin"
   ],
   "client": [
+    "DeathPointHandlerMixin",
+    "UIManagerMixin",
+    "WaypointManagerMixin",
+    "client.WailaConfigMixin"
   ],
   "injectors": {
     "defaultRequire": 1

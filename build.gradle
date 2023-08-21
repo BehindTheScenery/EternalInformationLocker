@@ -18,6 +18,11 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+
+    maven {
+        name = "JourneyMap (Public)"
+        url = "https://jm.gserv.me/repository/maven-public/"
+    }
 }
 
 dependencies {
@@ -30,7 +35,10 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     // Journey map
-    modImplementation "curse.maven:journeymap-32274:4532890"
+    modImplementation "curse.maven:journeymap-32274:4532890-sources-4532890"
+    modImplementation(group: 'info.journeymap', name: 'journeymap-api', version: "1.19.1-1.9-fabric-SNAPSHOT", changing: true)
+
+    modImplementation "curse.maven:jade-324717:4328558-sources-4328558"
 }
 
 processResources {
