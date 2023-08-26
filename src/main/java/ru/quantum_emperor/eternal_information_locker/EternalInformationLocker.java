@@ -38,7 +38,6 @@ public class EternalInformationLocker implements ModInitializer {
         ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
             ServerState serverState = ServerState.getServerState(handler.player.world.getServer());
             serverState.players.putIfAbsent(handler.player.getUuid(), new ServerState.PlayerData());
-            LOGGER.info(String.valueOf(serverState.players.get(handler.player.getUuid()).isLockedInformation));
             PacketByteBuf buf = PacketByteBufs.create();
             buf.writeBoolean(serverState.players.get(handler.player.getUuid()).isLockedInformation);
             ServerPlayNetworking.send(handler.player, NetworkMessage.PERSISTENT,buf);

@@ -3,8 +3,8 @@
   "id": "eternal_information_locker",
   "version": "${version}",
   "name": "Eternal Information Locker",
-  "description": "",
-  "authors": [],
+  "description": "It's Fabric mod, which lock information of journeymap and jade",
+  "authors": ["QuantumEmperor"],
   "contact": {
     "repo": "https://github.com/BehindTheScenery/EternalInformationLocker"
   },
@@ -24,6 +24,8 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "${minecraft_version}",
+    "journeymap": "5.9.x",
+    "jade": "8.7.x"
   }
 }
